@@ -59,6 +59,12 @@ void setup()
 	{
 		gamepadInitialized = true;
 	}
+
+	delay(400);
+	Serial.print("$$$"); //to enter command mode 
+	delay(100);
+	Serial.println("C"); //Connect to stored remote address
+	delay(50);
 }
 
 void loop()
